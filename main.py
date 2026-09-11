@@ -69,9 +69,37 @@ def scan_and_alert(watchlist):
         send_telegram_alert("Scan complete: No stocks met the technical criteria today.")
 
 if __name__ == "__main__":
-    stocks = [
-        "RELIANCE.NS", "TCS.NS", "INFY.NS", "HDFCBANK.NS", 
-        "ICICIBANK.NS", "SBIN.NS", "BHARTIARTL.NS", "ITC.NS", 
-        "LT.NS", "TATASTEEL.NS"
+        stocks = [
+        # Defence & Aerospace (High-Beta Momentum)
+        "HAL.NS", "BEL.NS", "MAZDOCK.NS", "COCHINSHIP.NS", "BDL.NS", 
+        "GRSE.NS", "DATAPATTNS.NS", "SOLARINDS.NS", "PARAS.NS",
+
+        # Large Cap IT & Tech
+        "RELIANCE.NS", "TCS.NS", "INFY.NS", "HCLTECH.NS", "WIPRO.NS", "TECHM.NS", 
+        "LTIM.NS", "PERSISTENT.NS", "COFORGE.NS",
+        
+        # Banking & Financial Services
+        "HDFCBANK.NS", "ICICIBANK.NS", "SBIN.NS", "KOTAKBANK.NS", "AXISBANK.NS", 
+        "INDUSINDBK.NS", "FEDERALBNK.NS", "BAJFINANCE.NS", "BAJAJFINSV.NS", 
+        "CHOLAFIN.NS", "MUTHOOTFIN.NS", "SHRIRAMFIN.NS",
+        
+        # Auto, EV & Ancillaries
+        "TATAMOTORS.NS", "M&M.NS", "MARUTI.NS", "BAJAJ-AUTO.NS", "HEROMOTOCO.NS", 
+        "EICHERMOT.NS", "TVSMOTOR.NS", "BHARATFORG.NS",
+        
+        # Metals, Mining & Energy
+        "TATASTEEL.NS", "HINDALCO.NS", "JSWSTEEL.NS", "VEDL.NS", "JINDALSTEL.NS", 
+        "COALINDIA.NS", "NTPC.NS", "POWERGRID.NS", "ONGC.NS", "BPCL.NS", "IOC.NS",
+        
+        # Capital Goods & Infrastructure
+        "LT.NS", "SIEMENS.NS", "ABB.NS", "BHEL.NS", "DLF.NS",
+        
+        # Pharma, Healthcare & Chemicals
+        "SUNPHARMA.NS", "CIPLA.NS", "DRREDDY.NS", "DIVISLAB.NS", "APOLLOHOSP.NS", 
+        "TRENT.NS", "PIDILITIND.NS",
+        
+        # FMCG, Consumer & Telecom
+        "ITC.NS", "HINDUNILVR.NS", "TITAN.NS", "BHARTIARTL.NS", "ASIANPAINT.NS"
     ]
+
     scan_and_alert(stocks)
